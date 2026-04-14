@@ -2,9 +2,9 @@
 IMC Trading Log Visualiser
 ==========================
 Usage:
-    python visualise_log.py <path_to_log_file.log>
+    python Visualiser.py <path_to_log_file.log>
 
-    e.g.  python visualise_log.py 96451.log
+    e.g.  python Visualiser.py 96451.log
 
 Produces a dashboard with:
   - Summary metrics (total PnL, per-product PnL, trade counts)
