@@ -207,9 +207,9 @@ class Trader:
 
                 # Sanity check, never buy above the average and sell below
                 if bid_qty > 0:
-                    orders.append(Order(product, fair + self.ASH_COATED_OSMIUM_BID_OFFSET, bid_qty))
+                    orders.append(Order(product, fair - self.ASH_COATED_OSMIUM_BID_OFFSET, bid_qty))
                 if ask_qty > 0:
-                    orders.append(Order(product, fair - self.ASH_COATED_OSMIUM_ASK_OFFSET, -ask_qty))
+                    orders.append(Order(product, fair + self.ASH_COATED_OSMIUM_ASK_OFFSET, -ask_qty))
 
             result[product] = orders
 
